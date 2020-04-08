@@ -1,0 +1,32 @@
+body{
+    background-color: #2f2f2f;
+    color: blue;
+}
+h1{
+    text-align: center;
+}
+
+.mainBox{
+    max-width: 600px;
+    margin: 0px auto;
+}
+.box{
+	width: 30%;
+	background: purple;
+	padding-bottom: 30%;
+	float: left;
+    margin: 1.66%;
+    border-radius: 20px;
+    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19); */
+
+}
+@media screen and (max-width:600px) {
+    .mainBox{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .box{
+        margin: 10px auto;
+    }
+}
