@@ -1,5 +1,5 @@
 body{
-    background-color: #2f2f2f;
+    background-color: rgb(24, 24, 24);
     color: blue;
 }
 h1{
@@ -17,8 +17,10 @@ h1{
 	float: left;
     margin: 1.66%;
     border-radius: 20px;
-    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19); */
-
+}
+.line{
+    width: 100%;
+    text-align: center;
 }
 @media screen and (max-width:600px) {
     .mainBox{
