@@ -14,9 +14,16 @@ statusText.textContent = "Let's Play!!";
 
 
 easyBtn.addEventListener("click",function(){
+document.querySelector("h1").style.background = "steelblue";
+
+statusText.textContent = "Let's Play!!";
+
     boxCount = 3;
-    this.style.background = "rgb(2, 226, 255)"
+    this.style.background = "steelblue"
+    this.style.color = "white"
     hardBtn.style.background = "white";
+    hardBtn.style.color = "steelblue";
+
     colors = generateRandomColor(boxCount);
     pickedColor = colors[ Math.floor(Math.random()*3)];
 	s.textContent = pickedColor;
@@ -33,8 +40,15 @@ easyBtn.addEventListener("click",function(){
 
 
 hardBtn.addEventListener("click",function(){
-    this.style.background = "rgb(2, 226, 255)"
+document.querySelector("h1").style.background = "steelblue";
+
+statusText.textContent = "Let's Play!!";
+
+    this.style.background = "steelblue"
+    this.style.color = "white"
     easyBtn.style.background = "white";
+    easyBtn.style.color = "steelblue";
+
     boxCount = 6;
     colors = generateRandomColor(boxCount);
     pickedColor = colors[ Math.floor(Math.random()*6)];
@@ -48,6 +62,10 @@ hardBtn.addEventListener("click",function(){
 
 
 playbtn.addEventListener("click", function() {
+document.querySelector("h1").style.background = "steelblue";
+
+statusText.textContent = "Let's Play!!";
+
 	colors = generateRandomColor(boxCount);
     pickedColor = colors[ Math.floor(Math.random()*boxCount)];
 	s.textContent = pickedColor;
@@ -65,6 +83,7 @@ for (var i = 0; i<colors.length ; i++){
         console.log(pickedColor);
         if( selectedColor === pickedColor){
             win();
+
         }
         else{
             loose(this);
@@ -77,6 +96,8 @@ function win(){
 for (var i = 0; i<colors.length ; i++){
     boxes[i].style.background = pickedColor;
 }
+document.querySelector("h1").style.background = pickedColor;
+
 statusText.textContent = "Correct!!";
 }
 

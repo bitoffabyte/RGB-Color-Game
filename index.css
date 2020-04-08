@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 body{
     background-color: #2f2f2f;
     color: white;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 h1{
     text-align: center;
-    font-size: 200%;
-    background-color: rgb(2, 226, 255);
+    font-size: 300%;
+    background-color: steelblue;
     margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 .rgbspan{
-    font-size: 300%;
+    font-size: 200%;
 }
 .mainBox{
     max-width: 600px;
@@ -33,15 +37,17 @@ button{
 button:focus {outline:0;}
 
 #playAgain{
-    background-color: tomato;
+    background-color: orange;
 }
 #hardBtn{
-    background-color: rgb(2, 226, 255);
+    background-color: steelblue;
+    color :white;
 }
 .status{
 	display: inline-block;
 	width: 20%;
     color: blue;
+    font-weight: 900;
 }
 .box{
 	width: 30%;
@@ -50,6 +56,7 @@ button:focus {outline:0;}
 	float: left;
     margin: 1.66%;
     border-radius: 20px;
+    transition: all 0.5s;
 }
 .line{
     width: 100%;
